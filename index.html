@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="animate__animated animate__bounce">Password Generator</h1>
+    <div class="options">
+      
+      
+      <br>
+     <b> <input type="checkbox" id="uppercase" checked>
+      <label for="uppercase"> Uppercase </label></b>
+      <br>
+      <b><input type="checkbox" id="lowercase" checked>
+      <label for="lowercase"> Lowercase </label></b>
+      <br>
+      <b>
+      <input type="checkbox" id="numbers" checked>
+      <label for="numbers"> Numbers</label>
+    </b>
+      <br>
+      <b>
+      <input type="checkbox" id="symbols">
+      <label for="symbols"> Special Characters</label>
+    </b>
+      <br>
+      <b>
+      <label for="length">Password size:</label>
+      <input type="range" id="length" min="8" max="100" value="12">
+      <br></b>
+    </div>
+    <div class="result">
+      <input type="text" id="password" readonly class="color">
+      
+      <button id="generate">Generate Password</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
